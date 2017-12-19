@@ -1,0 +1,17 @@
+<div>
+	<h1>Users</h1>
+	<table *ngIf='users' class="table">
+		<tr *ngFor='let user of users'>
+			<td>{{user.Id}}</td>
+			<td>{{user.Username}}</td>
+			<td>{{user.Password}}</td>
+			<td>{{user.Firstname}} {{user.Lastname}}</td>
+			<td>{{user.Phone}}</td>
+			<td>{{user.Email}}</td>
+			<td>{{user.Admin}}</td>
+			<td>{{user.Reviewer}}</td>
+			<td>{{user.Active}}</td>
+		</tr>
+	</table>
+	<h1>End of users</h1>
+</div>
